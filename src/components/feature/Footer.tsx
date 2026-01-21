@@ -69,7 +69,13 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400">© 2025 UIPSA. Todos los derechos reservados.</p>
+            <a href="https://pixmedia.agency/" target="_blank" rel="noopener noreferrer">
+              <img 
+                src="https://imgfz.com/i/pexORjF.png" 
+                alt="PixMedia Agency"
+                style={{ width: '290px', height: '13px' }}
+              />
+            </a>
           </div>
         </div>
 
