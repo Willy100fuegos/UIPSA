@@ -1,83 +1,87 @@
-# UIPSA Dashboard - Sistema de Gestión de Seguridad Intramuros 👮‍♂️🏢
+# UIPSA | Unidad de Inteligencia y Protección (Corporate Web) 🛡️🌐
 
-> **Plataforma integral de control operativo para servicios de Seguridad Privada.**
-> *Digitalización de la fuerza de tarea: Del control de accesos físico a la inteligencia de datos en la nube.*
+> **Portal corporativo oficial para la firma de seguridad privada UIPSA.**
+> *Desarrollo web enfocado en la conversión de clientes, presentación de servicios blindados y proyección de confianza empresarial.*
 
 <div align="center">
   <img src="https://img.shields.io/badge/Cliente-UIPSA_Seguridad-1e293b?style=for-the-badge&logo=shield&logoColor=white" />
-  <img src="https://img.shields.io/badge/Enfoque-Security_Ops-4f46e5?style=for-the-badge&logo=prometheus&logoColor=white" />
-  <img src="https://img.shields.io/badge/Estado-Producci%C3%B3n-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Agencia-Pixmedia_Creative-0ea5e9?style=for-the-badge&logo=design&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Producci%C3%B3n-success?style=for-the-badge" />
 </div>
 
 ---
 
-## 🎯 Objetivo del Sistema
+## 🎯 Objetivo del Proyecto
 
-Este desarrollo responde a la necesidad de **UIPSA** de estandarizar la operación de sus oficiales en servicios intramuros (Plantas Industriales, Corporativos, Residenciales). El sistema reemplaza las bitácoras de papel y los reportes de WhatsApp por una **Central de Mando Digital** que permite:
+Desarrollar la identidad digital de **UIPSA (Unidad de Inteligencia y Protección)**, una firma de seguridad de alto perfil operando en zonas industriales y corporativas (Monterrey / San Pedro Garza García).
 
-1.  **Supervisión Remota:** Validar la presencia física de los guardias en tiempo real.
-2.  **Trazabilidad:** Registrar cada rondín y evento con marca de tiempo inalterable.
-3.  **Imagen Corporativa:** Entregar a los clientes reportes profesionales PDF en lugar de fotos dispersas.
-
----
-
-## 💻 Módulos Funcionales
-
-### 1. 📋 Control de Asistencia Biométrico/Digital
-Sistema de "Check-In" geolocalizado para el inicio y fin de turno.
-* **Validación:** El oficial debe estar dentro del perímetro (Geofence) para marcar asistencia.
-* **Alertas:** Notificación a supervisores si un servicio queda descubierto (No-Show).
-
-### 2. 🚶‍♂️ Seguimiento de Rondines (Patrol Tracking)
-Módulo para la ejecución de recorridos de vigilancia programados.
-* **Puntos de Control:** Escaneo de códigos QR colocados estratégicamente en las instalaciones.
-* **Incidencias:** Opción para levantar reportes (puerta abierta, luminaria fundida) durante el recorrido con evidencia fotográfica.
-
-### 3. 📝 Bitácora Operativa Digital
-El corazón del sistema. Un feed en tiempo real de todas las novedades del servicio.
-* **Entradas/Salidas:** Registro de visitantes y proveedores.
-* **Materiales:** Control de ingreso y egreso de activos.
-* **Novedades:** Reporte de consignas específicas del cliente.
-
-### 4. 📊 Dashboard Gerencial
-Tablero de inteligencia para la toma de decisiones.
-* **KPIs:** Cumplimiento de rondines vs. Programados.
-* **Heatmap:** Zonas con mayor incidencia de reportes.
-* **Exportación:** Generación automática de la "Sábana de Asistencia" para nómina y facturación.
+El sitio web no es solo informativo, actúa como una **herramienta de ventas 24/7** diseñada para:
+1.  **Generar Confianza:** Mediante una UI limpia y profesional que refleja la seriedad de la empresa.
+2.  **Mostrar Capacidades:** Catálogo detallado de servicios (C4, Custodias, CCTV, Protección VIP).
+3.  **Captación de Leads:** Formularios de contacto optimizados y llamadas a la acción (CTAs) claras.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 💻 Arquitectura del Sitio (Sitemap)
 
-Arquitectura diseñada para alta disponibilidad y bajo consumo de datos en campo.
+El proyecto consta de 5 secciones estratégicas diseñadas para guiar al visitante a través del embudo de venta:
 
-| Capa | Tecnología | Función |
+### 1. 🏠 Inicio (Landing Page)
+* Hero section con propuesta de valor clara: "Soluciones Tecnológicas de Vanguardia".
+* Resumen de estadísticas de confianza (+500 proyectos, +15 años).
+* Highlights de tecnología (Monitoreo Inteligente y Biometría).
+
+### 2. 🏢 Quiénes Somos
+* Filosofía corporativa: Misión, Visión y Valores (Honestidad, Confianza, Profesionalismo).
+* Credenciales de la empresa y enfoque en personal certificado.
+
+### 3. 🛡️ Servicios (Catálogo)
+Desglose detallado de la oferta comercial:
+* **Tecnología:** C4, Monitoreo GPS, CCTV Inteligente, Alarmas.
+* **Operativo:** Protección VIP, Seguridad en Bienes, Traslado de Valores.
+* **Auditoría:** Análisis de riesgos y consultoría.
+
+### 4. 📜 Certificaciones
+* Sección vital para el rubro de seguridad. Muestra el cumplimiento normativo (EC0060) y estándares de calidad del personal.
+
+### 5. 📞 Contacto
+* Formulario funcional para cotizaciones.
+* Integración con Google Maps (Ubicación en San Pedro Garza García).
+* Enlaces directos a WhatsApp y Correo.
+
+---
+
+## 🛠️ Stack Tecnológico & Diseño
+
+Desarrollado con un enfoque **"Pixel Perfect"** y optimización de carga.
+
+| Área | Tecnología | Propósito |
 | :--- | :--- | :--- |
-| **Frontend** | **HTML5 / Bootstrap 5** | Interfaz móvil ligera (PWA) para uso en celulares de gama media. |
-| **Backend** | **PHP 8.x** | Lógica de negocio, procesamiento de bitácoras y generación de PDF. |
-| **Base de Datos** | **MySQL** | Almacenamiento relacional de históricos y usuarios. |
-| **Mapas** | **Leaflet JS** | Visualización de ubicaciones y geocercas de servicios. |
-| **Documentos** | **FPDF** | Motor de renderizado para reportes legales impresos. |
+| **Frontend** | **HTML5 Semántico / CSS3** | Estructura robusta y estilos modernos (Layout Flexbox/Grid). |
+| **Diseño UI/UX** | **Responsive Design** | Adaptabilidad total a móviles, tablets y escritorio. |
+| **Estilos** | **Custom CSS / Framework** | Paleta de colores corporativa (Azul Navy/Dorado) para psicología del color (Seguridad/Prestigio). |
+| **Assets** | **FontAwesome & WebFonts** | Iconografía vectorial para servicios y tipografía legible. |
+| **Interacción** | **JavaScript (Vanilla)** | Validaciones de formulario y efectos de navegación. |
 
 ---
 
-## 🔄 Flujo de Valor (Workflow)
+## 🎨 Identidad Visual (Look & Feel)
 
-1.  **Despliegue:** El oficial llega al servicio y escanea el QR Maestro de Asistencia.
-2.  **Operación:** Durante el turno, registra eventos en la Web App sin instalar nada (acceso vía navegador).
-3.  **Supervisión:** El Centro de Control (C4) ve los registros en vivo en el Dashboard.
-4.  **Cierre:** Al finalizar el turno, el sistema envía automáticamente el "Parte de Novedades" al cliente por correo.
+* **Paleta de Colores:** * 🔵 *Deep Blue:* Autoridad, Inteligencia, Seguridad.
+    * 🟡 *Gold Accent:* Calidad Premium, Excelencia.
+* **Tipografía:** Sans-serif moderna para máxima legibilidad en pantallas digitales.
+* **Imaginería:** Uso de fotografías de alta resolución mostrando tecnología (C4) y personal operativo uniformado.
 
 ---
 
-## 🔒 Seguridad y Privacidad
+## 🚀 Despliegue
 
-* **Role-Based Access Control (RBAC):** Niveles de acceso diferenciados (Guardia, Supervisor, Cliente, Administrador).
-* **Audit Logs:** Registro inmutable de todas las acciones para fines forenses.
-* **Data Privacy:** Los datos sensibles del cliente están segregados y encriptados.
+El sitio está optimizado para despliegue en cualquier servidor web estándar (Apache/Nginx) o servicios de hosting estático (GitHub Pages / Netlify).
+
+**URL Pública:** [https://willy100fuegos.github.io/UIPSA/](https://willy100fuegos.github.io/UIPSA/)
 
 ---
 
 **Desarrollado por:**
-**William Velázquez Valenzuela**
-*Director de Tecnologías | Pixmedia Agency*
+**Pixmedia Creative**
+*Dirección de Tecnologías: William Velázquez Valenzuela*
